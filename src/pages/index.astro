@@ -1,9 +1,15 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+const pageTitle = 'Home Page';
 ---
-
-<Layout>
-	<Welcome />
-	<h1>Index Page</h1>
-</Layout>
+<html lang="en">
+	<head>
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Layout>
+			<h1>{pageTitle}</h1>
+		</Layout>
+	</body>
+</html>

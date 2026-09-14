@@ -1,13 +1,40 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+const pageTitle = 'About Me';
 ---
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro</title>
+    <title>{pageTitle}</title>
+</head>
 
-<Layout>
+<!--<Layout>
     <body>
-	    <h1>This is the Astro About Page</h1>
-	    <h2>This is the first project with this framework</h2>
+   	    <h1>This is the Astro About Page</h1>
+   	    <h2>This is the first project with this framework</h2>
         <p>This is just an experiment used to learn the Astro framework. There's really nothing groundbreaking or new that I'm doing, just learning</p>
         <p>Just the second paragraph, nothing to see here.</p>
-	</body>
-</Layout>
+   	</body>
+</Layout> -->
+
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+
+    <h1>Astro</h1>
+    <h1>{pageTitle}</h1>
+    <h2>... and my new Astro site!</h2>
+
+    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  </body>
+</html>
+
+</html>
