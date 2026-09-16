@@ -1,6 +1,8 @@
 ---
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -16,6 +18,8 @@ const skills = ["Running", "Guarding", "Fetching", "Annoying my sister"];
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "crimson";
 ---
 
 <html lang="en">
@@ -23,6 +27,18 @@ const goal = 3;
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>{pageTitle}</title>
+
+        <style define:vars={{ skillColor }}>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            .skill {
+                color: green;
+                color: var(--skillColor);
+                font-weight: bold;
+            }
+        </style>
     </head>
 
     <body>
@@ -69,7 +85,7 @@ const goal = 3;
         <p>My skills are:</p>
         <ul>
             {skills.map((skill) => (
-                <li>{skill}</li>
+                <li class="skill">{skill}</li>
             ))}
         </ul>
 
