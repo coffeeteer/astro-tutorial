@@ -1,36 +1,36 @@
+---
+import Navigation from "../components/Navigation.astro";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-	<ul>
-	    <li><a href="/">Home</a></li>
-	    <li><a href="/about/">About</a></li>
-		<li><a href="/blog/">Blog</a></li>
-	</ul>
-	    <h1>Astro</h1>
-		<h2>My Astro Site</h2>
-		<slot />
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro Basics</title>
+    </head>
+    <body>
+        <h1>Astro</h1>
+        <h2>My Astro Site</h2>
+        <slot />
+    </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		h1, h2 {
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        h1,
+        h2 {
             color: blue;
             font: Time New Roman;
             text-align: center;
             padding: 20px;
-		}
-	}
+        }
+    }
 </style>
