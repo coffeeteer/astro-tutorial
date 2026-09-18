@@ -1,9 +1,36 @@
 ---
 ---
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<html>
+    <head>
+        <style>
+            .header-nav {
+                display: flex;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+
+            .header-nav a {
+                color: purple;
+                text-decoration: none;
+            }
+
+            .header-nav a:hover {
+                font-family: 2rem;
+                background-color: crimson;
+                color: white;
+                padding: 0.1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="header-nav">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/blog/">Blog</a>
+        </nav>
+    </body>
+</html>
 
 <!--<ul>
 	    <li><a href="/">Home</a></li>
